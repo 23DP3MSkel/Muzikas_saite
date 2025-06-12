@@ -17,6 +17,7 @@ nav{
     align-items: center;
     gap: 20px;
     position: fixed;
+    z-index: 100;
     
 }
 nav img{
@@ -34,12 +35,14 @@ nav a{
     text-decoration: none;
     color: white;
     gap: 10px 30px;
-    padding: 10px 10px;
-    border-radius: 10px;
+    padding: 15px 15px;
+    border-radius: 5px;
+
+    transition: background-color 0.2s ease-out;
     
 }
 
-nav a:hover{
+nav a:hover:not(#logo){
     background-color: rgb(61, 61, 61);
 
 }
@@ -52,7 +55,7 @@ nav a:hover{
 }
 
 section{
-    min-height: 80vh;
+    min-height: 90vh;
     padding: 80px 20px;
     display: flex;
     flex-direction: column;
@@ -66,7 +69,7 @@ section{
     color: white;
     background: url(../img/notescrop.png) top no-repeat ,
      color(srgb 44 43 43)
-    ;background-size: 1550px;
+    ;background-size: 100%;
     background-color: rgb(176, 176, 176);
 }
 
@@ -88,6 +91,7 @@ section{
 .cat{
     background-color: rgb(126, 126, 126);
     gap: 10px;
+    /* position: relative; */
 
     background: url(../img/cat.png) left bottom no-repeat,
     url(../img/cat2.webp) left top no-repeat,
@@ -104,6 +108,7 @@ button{
     background-color: black;
     color: white;
     font-size: 20px;
+    cursor: pointer;
 }
 
 button:hover{
@@ -118,11 +123,25 @@ button:hover{
     border-radius: 10px;
     box-shadow: 2px 2px 4px black;
 }
+.cat h1{
+    /* position: absolute; */
+    font-size: 80px;
+    /* margin-bottom: 45%; */
+    justify-content:none;
+}
+.muzika h1{
+    position: absolute;
+    font-size: 100px;
+    padding-bottom: 600px;
+}
 
 
 .muzika{
     display: flex;
     flex-direction: column;
+    position: relative;
+    background: url(../img/notes2.png) center bottom no-repeat;
+    background-size: 40%;
     background-color: rgb(231, 231, 231);
     
 }
@@ -132,7 +151,7 @@ button:hover{
     display: flex;
     flex-direction: column;
     width: 20%;
-    background-color: rgb(223, 255, 249);
+    background-color: rgb(255, 255, 255);
     padding: 50px 50px;
     border-radius: 10px;
     box-shadow: 2px 2px 4px black;
@@ -222,8 +241,10 @@ button:hover{
 
 .Klavieres{
     background: url(../img/note1.png) center no-repeat,
-    url(../img/note2.webp) center left no-repeat;
-    background-size: 300px, 250px;
+    url(../img/note2.webp) center left no-repeat,
+    url(../img/note.png) center right no-repeat;
+
+    background-size: 300px, 250px, 300px;
 }
 
 
