@@ -1,0 +1,238 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav{
+   
+    background-color: rgb(0, 0, 0);
+    
+    min-width: 100%;
+    min-height: 40px;
+    max-height: 40%;
+    
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    
+}
+nav img{
+    display: flex;
+    /* padding-right: 80%; */
+    /* right: 2px; */
+    /* top: 20px; */
+    padding-left: 30px;
+    
+    height: 90px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    gap: 10px 30px;
+    padding: 10px 10px;
+    border-radius: 10px;
+    
+}
+
+nav a:hover{
+    background-color: rgb(61, 61, 61);
+
+}
+.navbar{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30%;
+}
+
+section{
+    min-height: 80vh;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.hero{
+    color: white;
+    background: url(../img/notescrop.png) top no-repeat ,
+     color(srgb 44 43 43)
+    ;background-size: 1550px;
+    background-color: rgb(176, 176, 176);
+}
+
+.hero-div{
+    padding-top: 150px;
+    font-size: 60px;
+    text-shadow: 3px 3px 3px black;
+    /* padding-bottom: 1000px; */
+}
+
+.hero-div p{
+    font-size: 30px;
+}
+
+.hero-div h2{
+    font-size: 90px;
+}
+
+.cat{
+    background-color: rgb(126, 126, 126);
+    gap: 10px;
+
+    background: url(../img/cat.png) left bottom no-repeat,
+    url(../img/cat2.webp) left top no-repeat,
+    url(../img/cat3.png) right top no-repeat,
+    url(../img/cat5.png) right bottom no-repeat;
+    background-size: 300px,350px,300px,300px;
+}
+
+
+button{
+    border: none;
+    padding: 20px 20px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
+
+button:hover{
+    background-color: rgb(55, 55, 55);
+}
+
+.cat-fact{
+    display: flex;
+    width: 20%;
+    background-color: rgb(255, 240, 240);
+    padding: 30px 100px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+}
+
+
+.muzika{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 231, 231);
+    
+}
+
+.muzika-box{
+
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: rgb(223, 255, 249);
+    padding: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px black;
+    
+}
+
+.muzika-boxes{
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    
+}
+
+
+.piano{
+    width: 500px;
+    border-radius: 20px;
+    padding: 35px 40px;
+    background: black;
+    
+}
+
+
+.piano-keys{
+    display: flex;
+    margin-top: 40px;
+
+}
+
+.piano-keys .white{
+    width: 70px;
+    height: 230px;
+    border-radius: 8px;
+    border: 1px solid black;
+    background: linear-gradient(#fff 96%, #eee 4%);
+    
+}
+
+.piano-keys .white:active{
+    box-shadow: inset -5px 5px 20px black;
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+
+}
+
+.piano-keys .black:active{
+    box-shadow: inset -5px 5px 20px rgb(72, 71, 71);
+    background: linear-gradient(to bottom, #000, #626262);
+
+}
+
+
+.piano-keys .black{
+    width: 44px;
+    height: 140px;
+    z-index: 2;
+    margin: 0 -22px 0 -22px;
+    border-radius: 0 0 5px 5px;
+    background: linear-gradient(#333 , #000 );
+    
+}
+
+.piano-keys .key{
+    list-style: none;
+    cursor: pointer;
+    color: #626262;
+    position: relative;
+    text-transform: uppercase;
+    user-select: none;
+    
+}
+
+.piano-keys span {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 1.13rem;
+    text-align: center;
+    right: 0px;
+    
+}
+.Klavieres h2{
+    color: white;
+}
+
+
+.Klavieres{
+    background: url(../img/note1.png) center no-repeat,
+    url(../img/note2.webp) center left no-repeat;
+    background-size: 300px, 250px;
+}
+
+
+
+
+
+ footer {
+            background-color: #040404;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
